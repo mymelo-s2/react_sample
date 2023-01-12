@@ -1,0 +1,59 @@
+{
+  "melody": {
+    "2023/1/7": {
+      "income": {
+        "salary": "300000",
+        "bonus": "600000"
+      },
+      "spending": {
+        "rent": "70000",
+        "food": "10000",
+        "beauty": "20000"
+      }
+    },
+    "2023/1/10": {
+      "income": {},
+      "spending": {
+        "food": "500"
+      }
+    }
+  },
+  "kitty": {
+    "2023/1/5": {
+      "income": {
+        "salary": "100000",
+        "bonus": "200000"
+      },
+      "spending": {
+        "rent": "30000",
+        "food": "5000",
+        "beauty": "2000"
+      }
+    },
+    "2023/1/11": {
+      "income": {},
+      "spending": {
+        "food": "600"
+      }
+    }
+  },
+  "kuromi": {
+    "2023/1/1": {
+      "income": {
+        "salary": "200000",
+        "bonus": "400000"
+      },
+      "spending": {
+        "rent": "50000",
+        "food": "30000",
+        "beauty": "20000"
+      }
+    },
+    "2023/1/9": {
+      "income": {},
+      "spending": {
+        "food": "1000"
+      }
+    }
+  }
+}

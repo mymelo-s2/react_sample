@@ -1,0 +1,18 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.textbox {
+  width: 20%;
+  margin-left: 1%;
+  padding: 0.25%;
+}
+
+button {
+  margin-left: 1%;
+}
+
+div {
+  line-height: 250%;
+}
