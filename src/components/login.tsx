@@ -16,7 +16,7 @@ const Login = () => {
       userInfo[0].name === inputUserName &&
       userInfo[0].pass === inputPassword
     ) {
-      navigate("/samplelist", { state: { userName: userInfo[0].name } });
+      navigate("/thismonthplan", { state: { userName: userInfo[0].name } });
     } else {
       setInputPasswordElement("");
       setInputUserNameElement("");

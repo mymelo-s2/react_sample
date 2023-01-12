@@ -24,23 +24,18 @@ export const Main: VFC = memo(() => {
       <div className="main_menu">
         <div className="sidebar">
           <div>
-            <Link to="/samplelist" className="menu">
-              今月の予定
+            <Link to="/thismonthplan" className="menu">
+              今月
             </Link>
           </div>
           <div>
-            <Link to="/textbox" className="menu">
-              sample1
+            <Link to="/allplan" className="menu">
+              全期間
             </Link>
           </div>
           <div>
-            <Link to="/date" className="menu">
-              sample2
-            </Link>
-          </div>
-          <div>
-            <Link to="/password" className="menu">
-              sample3
+            <Link to="/selectdateplan" className="menu">
+              選択期間
             </Link>
           </div>
         </div>

@@ -12,3 +12,6 @@ tbody td {
   border-bottom: 1px solid #f4b6c0;
   font-size: clamp(5px, 2.9vw, 20px);
 }
+.planTd {
+  width: 60%;
+}

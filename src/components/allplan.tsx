@@ -1,16 +1,10 @@
-import { useOutletContext } from "react-router-dom";
 import "../css/styles.css";
 import "../css/table.css";
 import Data from "../json/plan.json";
+import { useOutletContext } from "react-router-dom";
 
-export default function SampleList() {
+export default function AllPlan() {
   const { userName } = useOutletContext<{ userName: string }>();
-  const thisMonth = () => {
-    const date = new Date();
-    const year = date.getFullYear();
-    const month = date.getMonth() + 1;
-    return year + " " + month;
-  };
 
   const result = Data.filter((data: any) => data.name === userName);
   const dateTd: any[] = [];
@@ -23,22 +17,8 @@ export default function SampleList() {
     return fixDate;
   };
 
-  const searchKey = () => {
-    let date = thisMonth();
-    if (date.length === 6) {
-      date = date.replace(" ", "0");
-    } else {
-      date = date.replace(" ", "");
-    }
-    return "d" + date;
-  };
-
-  const thisMonthPlans = Object.keys(result[0].plan).filter((e: any) =>
-    e.startsWith(searchKey())
-  );
-
-  for (let i = 0; i < thisMonthPlans.length; i++) {
-    let key = thisMonthPlans[i];
+  for (let i = 0; i < Object.keys(result[0].plan).length; i++) {
+    let key = Object.keys(result[0].plan)[i];
     let pushKey = key.replace("d", "");
     dateTd.push(dateFix(pushKey));
     planTd.push(result[0].plan[key]);
@@ -49,17 +29,15 @@ export default function SampleList() {
     return (
       <tr key={index}>
         <td>{dateTd[index]}</td>
-        <td>{planTd[index]}</td>
+        <td className="planTd">{planTd[index]}</td>
       </tr>
     );
   });
 
-  const view = thisMonth().replace(" ", "/");
-
   return (
-    <div className="SampleList">
+    <div className="AllPlan">
       <h2>
-        {view} {userName}さんの予定
+        <p>全期間の{userName}さんの予定</p>
       </h2>
       <div>
         <table>
