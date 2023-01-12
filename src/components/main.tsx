@@ -25,7 +25,7 @@ export const Main: VFC = memo(() => {
         <div className="sidebar">
           <div>
             <Link to="/samplelist" className="menu">
-              Sample List
+              Monthly
             </Link>
           </div>
           <div>
@@ -45,7 +45,7 @@ export const Main: VFC = memo(() => {
           </div>
         </div>
         <div className="content">
-          <Outlet />
+          <Outlet context={{ userName: userName.userName }} />
         </div>
       </div>
     </div>
