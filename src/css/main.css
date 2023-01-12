@@ -23,7 +23,7 @@
   background-color: #ffffff;
   color: #f4b6c0;
   font-size: clamp(5px, 2.9vw, 15px);
-  border: 2px solid #f05f8d;
+  border: 2px solid #ffffff;
 }
 .logout input:hover {
   background-color: #f05f8d;
@@ -56,15 +56,12 @@
 .menu {
   padding: 0 0 10%;
   color: #f4b6c0;
+  font-size: clamp(5px, 2.9vw, 20px);
 }
 .menu:hover {
   padding: 0 0 10%;
-}
-a {
-  color: #f4b6c0;
-}
-a:hover {
-  color: #dc171f;
+  color: #f05f8d;
+  font-size: clamp(5px, 2.9vw, 20px);
 }
 .content {
   padding: 2% 2% 2%;

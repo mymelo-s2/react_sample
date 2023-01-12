@@ -15,7 +15,7 @@ export const Main: VFC = memo(() => {
   return (
     <div className="main">
       <div className="main_header" id="header">
-        React TypeScript Sample
+        React Sample
         <p className="username">user : {userName.userName}</p>
         <p className="logout">
           <input type="button" value="logout" onClick={() => logout()} />
@@ -25,7 +25,7 @@ export const Main: VFC = memo(() => {
         <div className="sidebar">
           <div>
             <Link to="/samplelist" className="menu">
-              Monthly
+              今月の予定
             </Link>
           </div>
           <div>
