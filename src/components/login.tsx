@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Data from "../json/userinfo.json";
 import "../css/login.css";
+import { ReactComponent as Heart } from "../img/heart.svg";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -45,6 +46,7 @@ const Login = () => {
         </div>
         <div>
           <button onClick={() => printText()}>Login</button>
+          <Heart style={{ width: "24px", height: "24px", stroke: "blue" }} />
         </div>
       </div>
     </div>

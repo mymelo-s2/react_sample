@@ -41,3 +41,8 @@
   background: #f6adc6;
   color: #ffffff;
 }
+.svgHeart {
+  fill: rgb(100, 0, 0);
+  stroke: blue;
+  stroke-width: 10px;
+}
